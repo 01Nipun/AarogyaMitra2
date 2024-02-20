@@ -71,6 +71,18 @@ export default function Login({ logVer }) {
 
 
   return <>
+   <div
+            className="absolute top-0 w-full h-full bg-full bg-cover"
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+            }}
+          >
+            <span
+              id="whiteOverlay"
+              className="w-full h-full absolute opacity-75 bg-black"
+            ></span>
+      
     <div className='w-50 m-auto py-3'>
 
       {joiErrors == null ? "" : joiErrors.map((err) => <div className='alert alert-danger'>{err.message}</div>)}
@@ -98,7 +110,7 @@ export default function Login({ logVer }) {
     Login As a Doctor
      </button> </Link>
     </div>
-
+</div>
   </>
 }
 

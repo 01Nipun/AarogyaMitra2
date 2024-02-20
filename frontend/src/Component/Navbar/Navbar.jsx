@@ -16,7 +16,7 @@ export default function Navbar({crrUser , remove}) {
   <nav className="navbar navbar-expand-lg bg-body-tertiary ">
   <div className="container-fluid ">
   
-    <Link className="navbar-brand " to="/Home"><img src='pulsee.png' alt=''/></Link>
+    <Link className="navbar-brand " to="/Home"><img src='logo.png' alt=''/></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -31,15 +31,15 @@ export default function Navbar({crrUser , remove}) {
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/Features">Features</Link>
         </li>
-        {/* <li class="nav-item">
+         <li class="nav-item">
           <Link className="nav-link active" aria-current="page" to="/Contact">Contact us</Link>
-        </li> */}
+        </li> 
         <li class="nav-item">
           <Link className="nav-link active" aria-current="page" to="/Profile">Profile</Link>
         </li>
       </ul>: ''}
      
-      <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+     {/*} <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
          
          {crrUser ? <>
           <li className="nav-item">
@@ -60,6 +60,7 @@ export default function Navbar({crrUser , remove}) {
     
        
          </ul>
+         */}
     </div>
   </div>
 </nav>
