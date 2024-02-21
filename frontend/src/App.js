@@ -111,6 +111,7 @@ export default function App() {
         {path: 'History' , element:<History/>},
         { path: '', element: <Home /> },
         { path: 'Home', element: <Home /> },
+        { path: 'Maps', element: <Maps /> },
         { path: 'Login', element: <Login logVer={getLoggedInUser} /> },
         { path: 'Registration', element: <Registration /> },
         { path: 'Features', element: <Features /> },
