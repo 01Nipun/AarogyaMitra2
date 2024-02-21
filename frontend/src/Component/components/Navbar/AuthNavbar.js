@@ -10,9 +10,9 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-3 py-3 navbar-expand-lg  bg-white shadow ">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+      <nav className="top-0 absolute z-30 w-full flex flex-wrap items-center justify-between px-3 py-3 navbar-expand-lg  bg-white shadow ">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between ">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start ">
             <Link
              className="navbar-brand " to="/Home"><img src='logo.png' alt=''/>
             </Link>
@@ -88,7 +88,15 @@ export default function Navbar(props) {
                   <span className="lg:hidden inline-block ml-2">Star</span>
                 </a>
               </li> */}
-
+ <li className="flex items-center">
+              <Link
+                  className="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                  type="button" to="/Maps"
+                >
+                  {/* <i className="fas fa-arrow-alt-circle-down"></i>  */}
+                  Maps
+                </Link>
+                </li>
               <li className="flex items-center">
               <Link
                   className="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"

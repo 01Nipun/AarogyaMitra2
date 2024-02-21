@@ -11,6 +11,7 @@ import Registration from './Component/Registration/Registration.jsx';
 import Notfound from './Component/Notfound/Notfound';
 import Features from './Component/Features/Features.jsx';
 import Contact from './Component/Contactus/Contact';
+import Maps from './Component/components/Maps/MapExample.js';
 
 import Payment from './Component/Payment/Payment';
 import Specialties from './Component/Specialties/Specialties';
