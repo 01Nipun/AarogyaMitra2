@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -10,11 +9,14 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="top-0 absolute z-30 w-full flex flex-wrap items-center justify-between px-3 py-3 navbar-expand-lg  bg-white shadow ">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between ">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start ">
+      <nav className="top-0 absolute z-50 w-screen flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
-             className="navbar-brand " to="/Home"><img src='logo.png' alt=''/>
+              className="text-white text-sm font-bold"
+              to="/"
+            >
+               <Link className="navbar-brand" to="/Home"><img src='logo.png' alt='' style={{ marginLeft: '-80px' }}/></Link>
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -33,22 +35,19 @@ export default function Navbar(props) {
           >
           <li className="flex items-center">
                 <Link
-                  className="lg:text-black px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    className="border border-blue-600 lg:text-black lg:hover:text-blue-600 text-blueGray-700 px-1 py-2 lg:py-1 flex items-center text-lg uppercase font-bold rounded mr-2"
                   to="/Features"
                 >
-                  <i className="lg:text-black text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />{" "}
                   Features
                 </Link>
               </li>
 
               <li className="flex items-center">
                 <Link
-                  className="lg:text-black  px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="border border-blue-600 lg:text-black lg:hover:text-blue-600 text-blueGray-700 px-1 py-2 lg:py-1 flex items-center text-lg uppercase font-bold rounded ml-2"
                   to="/Profile"
                 >
-                  <i className="lg:text-black text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />{" "}
                   Profile
-                  
                 </Link>
               </li>
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
@@ -94,7 +93,7 @@ export default function Navbar(props) {
                   type="button" to="/Maps"
                 >
                   {/* <i className="fas fa-arrow-alt-circle-down"></i>  */}
-                  Maps
+                  Map
                 </Link>
                 </li>
               <li className="flex items-center">

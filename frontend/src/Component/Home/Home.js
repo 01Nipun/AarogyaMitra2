@@ -16,13 +16,10 @@ export default function Home() {
             className="absolute top-0 w-full h-full bg-full bg-cover"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+                "url(https://images.unsplash.com/photo-1557683311-eac922347aa1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJsdWUlMjBwdXJwbGUlMjBncmFkaWVudHxlbnwwfHwwfHx8MA%3D%3D)",
             }}
           >
-            <span
-              id="blackOverlay"
-              className="w-full h-full absolute opacity-75 bg-black"
-            ></span>
+           
           </div>
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
@@ -119,49 +116,33 @@ export default function Home() {
             </div>
 
             <div className="flex flex-wrap items-center mt-32">
-              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+            <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                <div className="text-blue-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
-                <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Working with us is a pleasure
+                <h3 className="text-3xl mb-3 font-bold leading-normal">
+                  Ensuring your health is our priority.
                 </h3>
-                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                  Don't let your uses guess by attaching tooltips and popoves to
-                  any element. Just make sure you enable them first via
-                  JavaScript.
+                <p className="text-xl font-sans italic font-normal mt-3 mb-5 text-black">
+                  Let our integrated functions make a good use for your health.
                 </p>
-                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">
-                  The kit comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go. Just make sure you enable them first via
-                  JavaScript.
-                </p>
-                <Link to="/" className="font-bold text-blueGray-700 mt-8">
-                  Check Notus React!
+                <Link
+                 className="bg-blue-500 text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none border-black lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                  type="button" to="/Login"
+                >
+                  {/* <i className="fas fa-arrow-alt-circle-down"></i>  */}
+                  Get started
                 </Link>
+                
               </div>
-
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-lightBlue-500">
                   <img
                     alt="..."
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    src="https://imgs.search.brave.com/d2rgd9xe-TwkP2wpOAmuN9klHg3m2ca7ZPZOwpVnV24/rs:fit:500:0:0/g:ce/aHR0cHM6Ly92aXRh/bGRlc2lnbi5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MDQvMTEtV2Vic2l0/ZS1GZWF0dXJlcy1C/bG9nLUdyYXBoaWMt/ODE4eDU5Ni5qcGc"
                     className="w-full align-middle rounded-t-lg"
                   />
-                  <blockquote className="relative p-8 mb-4">
-                  
-                    
-                    
-                    <h4 className="text-xl font-bold text-white">
-                      Top Notch Services
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
-                    </p>
-                  </blockquote>
+                 
                 </div>
               </div>
             </div>
@@ -184,61 +165,22 @@ export default function Home() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  src="https://i.pinimg.com/564x/fa/3b/f1/fa3bf1463710297d6031b522e0baf7ef.jpg"
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
-                  <div className="text-lightBlue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-lightBlue-300">
-                    <i className="fas fa-rocket text-xl"></i>
+                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-600">
+                    <i class="fa-solid fa-car"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">A growing company</h3>
-                  <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                    The extension comes with three pre-built pages to help you
-                    get started faster. You can change the text and images and
-                    you're good to go.
+                  <h3 className="text-3xl mb-3 font-bold leading-normal">Maps codify the miracle of existence</h3>
+                  <p className="text-xl font-sans italic font-normal mt-3 mb-5 text-black">
+                  Seamlessly integrates with a state-of-the-art mapping system, enhancing user experience and providing comprehensive location-based services
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
                       <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="fas fa-fingerprint"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-blueGray-500">
-                            Carefully crafted components
-                          </h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="fab fa-html5"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-blueGray-500">
-                            Amazing page examples
-                          </h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="far fa-paper-plane"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-blueGray-500">
-                            Dynamic components
-                          </h4>
-                        </div>
+                        
                       </div>
                     </li>
                   </ul>
@@ -252,11 +194,9 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Here are our heroes</h2>
+                <h2 className="text-4xl font-semibold">Here's the developing team</h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
+                 
                 </p>
               </div>
             </div>
@@ -268,29 +208,24 @@ export default function Home() {
                     // src={require("assets/img/team-1-800x800.jpg").default}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Ryan Tompson</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Web Developer
-                    </p>
+                 <div className="pt-6 text-center">
+                    <h5 className="text-xl font-bold">Satvik Shrivastava</h5>
                     <div className="mt-6">
+                     <a href="https://www.linkedin.com/in/xatvik/" target="_blank" rel="noopener noreferrer">
                       <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
+                         className="bg-blue-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-5 mb-1"
+                          type="button"
+                          >
+                            <i class="fa-brands fa-linkedin"></i>
+                       </button>
+                    </a>
                       <button
-                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-blue-900 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-5 mb-1"
                         type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
+                        onClick={() => window.open('', '_blank')}
+                        >
+                    
+                        <i class="fa-brands fa-github"></i>
                       </button>
                     </div>
                   </div>
@@ -304,22 +239,23 @@ export default function Home() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Romina Hadid</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Marketing Specialist
-                    </p>
+                    <h5 className="text-xl font-bold">Nipun Dehariya</h5>
+                   
                     <div className="mt-6">
+                     <a href="https://www.linkedin.com/in/nipundehariya/" target="_blank" rel="noopener noreferrer">
                       <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
+                         className="bg-blue-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-5 mb-1"
+                          type="button"
+                          >
+                            <i class="fa-brands fa-linkedin"></i>
+                       </button>
+                    </a>
                       <button
-                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
+                          className="bg-blue-900 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                          type="button"
+                          onClick={() => window.open('https://github.com/NipunDehariya', '_blank')}
                       >
-                        <i className="fab fa-facebook-f"></i>
+                        <i class="fa-brands fa-github"></i>
                       </button>
                     </div>
                   </div>
@@ -329,32 +265,27 @@ export default function Home() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    // src={require("assets/img/team-3-800x800.jpg").default}
+                    //src="https://via.placeholder.com/150"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alexa Smith</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      UI/UX Designer
-                    </p>
+                    <h5 className="text-xl font-bold">Nipun Yadav</h5>
+                   
                     <div className="mt-6">
+                    <a href="https://www.linkedin.com/in/nipun-yadav-3325b3258/" target="_blank" rel="noopener noreferrer">
                       <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
+                         className="bg-blue-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-5 mb-1"
+                          type="button"
+                          >
+                            <i class="fa-brands fa-linkedin"></i>
+                       </button>
+                    </a>
                       <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        className="bg-blue-900 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
+                        onClick={() => window.open('https://github.com/01Nipun', '_blank')}
                       >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
                       </button>
                     </div>
                   </div>
@@ -368,35 +299,29 @@ export default function Home() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Jenna Kardi</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Founder and CEO
-                    </p>
+                    <h5 className="text-xl font-bold">Moulik Sharma</h5>
+                  
                     <div className="mt-6">
+                    <a href="https://www.linkedin.com/in/moulik-sharma-44b2a7253/" target="_blank" rel="noopener noreferrer">
                       <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                         className="bg-blue-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-5 mb-1"
+                          type="button"
+                          >
+                            <i class="fa-brands fa-linkedin"></i>
+                       </button>
+                    </a>
+                     <button
+                        className="bg-blue-900 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
+                        onClick={() => window.open('https://github.com/GitHUBman909', '_blank')}
+                        >
+                      
+                        <i class="fa-brands fa-github"></i>
                       </button>
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
+                      
+                    
+                        
+                     
                     </div>
                   </div>
                 </div>
@@ -418,7 +343,7 @@ export default function Home() {
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold text-white">
-                  Build something
+                 AarogyaMitra 
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
                   Put the potentially record low maximum sea ice extent tihs
@@ -433,7 +358,7 @@ export default function Home() {
                   <i className="fas fa-medal text-xl"></i>
                 </div>
                 <h6 className="text-xl mt-5 font-semibold text-white">
-                  Excelent Services
+                  24/7 Services
                 </h6>
                 <p className="mt-2 mb-4 text-blueGray-400">
                   Some quick example text to build on the card title and make up

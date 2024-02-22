@@ -8,9 +8,6 @@ export default function Footer() {
  
   <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
   
-    <div className="me-5 d-none d-lg-block text-center justify-content-center justify-content-lg-between p-4 border-bottom">
-      <span><b>Thanks for visiting our website!</b></span>
-    </div>
    
    
    

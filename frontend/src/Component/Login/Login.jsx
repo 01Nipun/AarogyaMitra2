@@ -112,6 +112,10 @@ export default function Login() {
                 <Link to="/auth/register" className="text-blueGray-200">
                   <small>Create new account</small>
                 </Link>
+                <Link to = '/LoginAsDocotr'>  
+    <button className='btn btn-outline-danger mt-3 d-grid gap-2 mx-auto my-3'>
+    Login As a Doctor
+     </button> </Link>
               </div>
             </div>
           </div>
